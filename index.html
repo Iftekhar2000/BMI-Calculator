@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+</head>
+<body>
+
+
+    <div style="background-color:rgb(170, 169, 169); top: 50%; left: 50%; padding: 30px; margin: 30px;
+    display: flex; justify-content: center; align-items: center;gap: 10px;" >
+
+        <label for="weight">weight (Kg)</label>
+        <input type="text" id="weightInput"><br>
+        <label for="weight">height (M)</label>
+        <input type="text" id="heightInput"><br>
+        <button id="calcuateBtn" onclick="myBmi()">Calculate</button>
+        <br>
+        
+        <label id="result" style="color: black;"></label>
+        
+    </div>
+
+    
+    <script>
+        
+        function myBmi(){
+           let weight = document.getElementById("weightInput").value;
+           let height = document.getElementById("heightInput").value;
+           let h2x = height*height;
+        let result = weight/h2x;
+        document.getElementById("result").innerHTML = result;
+       }
+        
+   
+
+
+
+
+
+    
+    </script>
+
+
+</body>
+</html>
+
